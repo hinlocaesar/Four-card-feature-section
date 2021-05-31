@@ -1,0 +1,87 @@
+/*### Primary*/
+/*### Neutral*/
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  background-color: #F0F0F0;
+}
+
+.card-size {
+  width: 200px;
+  height: 100px;
+}
+
+.card-size_header {
+  height: 100px;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'title title title ' 'supervisor teambuilder  calculator' 'supervisor karma calculator';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+        grid-template-areas: 'title' 'supervisor' 'teambuilder' 'karma' 'calculator';
+  }
+}
+
+.container__title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: title;
+  background-color: red;
+}
+
+.container__supervisor {
+  position: relative;
+  top: 50px;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: supervisor;
+  background-color: yellow;
+}
+
+.container__teambuilder {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: teambuilder;
+  background-color: blue;
+}
+
+.container__karma {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: karma;
+  background-color: green;
+}
+
+.container__calculator {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: calculator;
+  background-color: brown;
+  position: relative;
+  top: 50px;
+}
+/*# sourceMappingURL=style.css.map */
