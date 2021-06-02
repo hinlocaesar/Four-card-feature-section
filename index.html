@@ -5,9 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="app/scss/style.css">
+  <link rel="stylesheet" href="/app/scss/root.css">
+  
   <title>Frontend Mentor | Four card feature section</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -17,34 +16,39 @@
   </style>
 </head>
 <body>
-
-  <div class="container">
-    <div class="container__title card-size_header">1</div>
-    <div class="container__supervisor card-size">2</div>
-    <div class="container__teambuilder card-size">3</div>
-    <div class="container__karma card-size">4</div>
-    <div class="container__calculator card-size">5</div>
-  </div>
-
-
-<!--
+  
+<div class="title">
   Reliable, efficient delivery
   Powered by Technology
 
   Our Artificial Intelligence powered tools use millions of project data points 
   to ensure that your project is successful
+</div>
 
-  Supervisor
-  Monitors activity to identify project roadblocks
+<ul class="cards">
+  <li class="supervisor card">  Supervisor
+   Monitors activity to identify project roadblocks
+  </li>
 
-  Team Builder
-  Scans our talent network to create the optimal team for your project
+  <li class="teambuilder card">  Team Builder
+   Scans our talent network to create the optimal team for your project
+  </li>
 
-  Karma
-  Regularly evaluates our talent to ensure quality
+  <li class="karma card">  Karma
+    Regularly evaluates our talent to ensure quality
+  </li>
 
-  Calculator
-  Uses data from past projects to provide better delivery estimates
+  <li class="calculator card">  Calculator
+   Uses data from past projects to provide better delivery estimates
+  </li>
+</ul>
+
+
+
+
+
+
+
 
   
   <footer>
@@ -53,6 +57,5 @@
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer>
-  -->
 </body>
 </html>
