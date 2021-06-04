@@ -68,7 +68,6 @@ table {
   /*base style for box*/
   /*base style for img*/
   /*base style for image*/
-  /*individual styles base*/
 }
 
 @media only screen and (min-width: 600px) {
@@ -116,11 +115,10 @@ table {
 }
 
 .container--box {
-  background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
   border-radius: 0.31rem;
-  -webkit-box-shadow: 5px 5px 5px 5px;
-          box-shadow: 5px 5px 5px 5px;
+  -webkit-box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .container__img {
@@ -139,28 +137,43 @@ table {
   height: 3.6rem;
 }
 
-.container__box2 {
-  border-top-style: solid;
-  border-top-color: #4FCCCD;
-}
-
-.container__box3 {
-  border-top-style: solid;
-  border-top-color: #E15857;
-}
-
-.container__box5 {
-  border-top-style: solid;
-  border-top-color: #589dea;
-}
-
-.container__box4 {
-  border-top-style: solid;
-  border-top-color: #fcae4a;
-}
-
 /*container end*/
-/*base*/
+.title {
+  text-align: center;
+  padding-top: 2.56rem;
+  padding-left: 2.56rem;
+  padding-right: 2.56rem;
+  font-family: "Poppins", sans-serif;
+  color: #4c4e61;
+}
+
+.title__main {
+  font-size: 1.18rem;
+  padding-bottom: 0.5rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .title__main {
+    font-size: 1.6rem;
+  }
+}
+
+.title__submain {
+  font-size: 1.25rem;
+  font-weight: bolder;
+  padding-bottom: 2rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .title__submain {
+    font-size: 1.6rem;
+  }
+}
+
+.title__description {
+  font-size: 0.8rem;
+}
+
 .container__title {
   font-family: "Poppins", sans-serif;
   padding-top: 1.9rem;
@@ -180,5 +193,30 @@ table {
   padding-right: 1.9rem;
   padding-bottom: 1.5rem;
   text-align: left;
+}
+
+/*individual styles base*/
+.container__box2 {
+  border-top-style: solid;
+  border-top-color: #4FCCCD;
+  border-width: 0.3rem;
+}
+
+.container__box3 {
+  border-top-style: solid;
+  border-top-color: #E15857;
+  border-width: 0.3rem;
+}
+
+.container__box4 {
+  border-top-style: solid;
+  border-top-color: #fcae4a;
+  border-width: 0.3rem;
+}
+
+.container__box5 {
+  border-top-style: solid;
+  border-top-color: #589dea;
+  border-width: 0.3rem;
 }
 /*# sourceMappingURL=root.css.map */

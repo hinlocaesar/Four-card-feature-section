@@ -1,0 +1,33 @@
+.title{
+text-align: center;
+padding-top: 2.56rem;
+padding-left: 2.56rem;
+padding-right: 2.56rem;
+font-family:$Poppins;
+color:$VeryDarkBlue;
+
+    &__main{
+        font-size: 1.18rem;
+        padding-bottom: 0.5rem;
+
+        @media only screen and (min-width: 600px) {
+            font-size: 1.6rem;
+        }
+    }
+
+    &__submain{
+        font-size: 1.25rem;
+        font-weight: bolder;
+        padding-bottom: 2rem;
+
+        @media only screen and (min-width: 600px) {
+            font-size: 1.6rem;
+        }
+    }
+
+    &__description{
+        font-size:0.8rem;
+    }
+
+
+}

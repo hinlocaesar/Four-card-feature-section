@@ -4,6 +4,8 @@
     display: grid;
     grid-gap: 1.8rem;
 
+
+
     /*media query for desktop view*/
     @media only screen and (min-width: 600px) {
             display: grid;
@@ -14,8 +16,6 @@
             grid-gap: 1.8rem;
             justify-content: center;
         
-  
-
             &__box2{
                 grid-area:box2;
                 position:relative;
@@ -43,12 +43,10 @@
 
     /*base style for box*/
     &--box{
-        background-color: rgba(255, 255, 255, 0.8);
         text-align: center;
         border-radius: 0.31rem;
-        box-shadow: 5px 5px 5px 5px;
-
-    }  
+        box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.2);
+     }  
 
     /*base style for img*/
     &__img{
@@ -64,29 +62,9 @@
         height: 3.6rem;
     }
     
-    /*individual styles base*/
-    &__box2{
-        border-top-style: solid;
-        border-top-color: #4FCCCD;
-    }
 
-    &__box3{
-        border-top-style: solid;
-        border-top-color:#E15857;
-    }
-    
-    &__box5{
-        border-top-style: solid;
-        border-top-color: #589dea;
-    }
-    
-    &__box4{
-        border-top-style: solid;
-        border-top-color: #fcae4a;
-    }
 }/*container end*/
 
-/*base*/
 
 
 
