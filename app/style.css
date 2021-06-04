@@ -1,13 +1,15 @@
 /*base*/
 .container {
-  background-color: orange;
   padding: 1.6rem;
   display: -ms-grid;
   display: grid;
   grid-gap: 1.8rem;
   /*media query for desktop view*/
   /*media query end*/
-  /*style for box*/
+  /*base style for box*/
+  /*base style for img*/
+  /*base style for image*/
+  /*individual styles base*/
 }
 
 @media only screen and (min-width: 600px) {
@@ -57,6 +59,45 @@
 .container--box {
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
+  border-radius: 0.31rem;
+  -webkit-box-shadow: 5px 5px 5px 5px;
+          box-shadow: 5px 5px 5px 5px;
+}
+
+.container__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  height: 3.5rem;
+}
+
+.container__image {
+  height: 3rem;
+}
+
+.container__box2 {
+  border-top-style: solid;
+  border-top-color: #4FCCCD;
+}
+
+.container__box3 {
+  border-top-style: solid;
+  border-top-color: #E15857;
+}
+
+.container__box5 {
+  border-top-style: solid;
+  border-top-color: #589dea;
+}
+
+.container__box4 {
+  border-top-style: solid;
+  border-top-color: #fcae4a;
 }
 
 /*container end*/
